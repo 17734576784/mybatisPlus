@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ke.dao.system.PileparaMapper">
+	<select id="listPile" parameterType="map" resultType="map">
+		SELECT s.subst_name subsDesc,r.name rtuDesc,p.name pileName 
+		from pilepara p,rtupara r,substpara s
+		where p.rtu_id = r.id and r.substid = s.id and p.subst_id = s.id 
+		and p.subst_id = #{param.substId}
+	</select>
+	
+</mapper>

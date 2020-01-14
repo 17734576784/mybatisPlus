@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ke.dao.system.RtuparaMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ke.bean.system.Rtupara">
+        <id column="id" property="id" />
+        <result column="substid" property="substid" />
+        <result column="name" property="name" />
+        <result column="useflag" property="useflag" />
+        <result column="protocol" property="protocol" />
+        <result column="rtu_addr" property="rtuAddr" />
+        <result column="area_code" property="areaCode" />
+        <result column="auth_code" property="authCode" />
+        <result column="auth_codelen" property="authCodelen" />
+        <result column="auth_code_fano" property="authCodeFano" />
+        <result column="auth_code_facs" property="authCodeFacs" />
+        <result column="safe_inter" property="safeInter" />
+        <result column="encrypt_type" property="encryptType" />
+        <result column="encrypt_id" property="encryptId" />
+        <result column="soft_version" property="softVersion" />
+        <result column="hard_version" property="hardVersion" />
+        <result column="simcard" property="simcard" />
+        <result column="concurrency_f" property="concurrencyF" />
+        <result column="pilenum" property="pilenum" />
+        <result column="create_date" property="createDate" />
+        <result column="update_date" property="updateDate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, substid, name, useflag, protocol, rtu_addr, area_code, auth_code, auth_codelen, auth_code_fano, auth_code_facs, safe_inter, encrypt_type, encrypt_id, soft_version, hard_version, simcard, concurrency_f, pilenum, create_date, update_date
+    </sql>
+
+</mapper>

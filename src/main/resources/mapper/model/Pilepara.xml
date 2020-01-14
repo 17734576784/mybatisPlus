@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ke.dao.model.PileparaMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ke.bean.model.Pilepara">
+        <id column="id" property="id" />
+        <result column="subst_id" property="substId" />
+        <result column="name" property="name" />
+        <result column="use_flag" property="useFlag" />
+        <result column="serial_code" property="serialCode" />
+        <result column="rtu_id" property="rtuId" />
+        <result column="pileaddr" property="pileaddr" />
+        <result column="image_url" property="imageUrl" />
+        <result column="type" property="type" />
+        <result column="gun_num" property="gunNum" />
+        <result column="bike_gun_num" property="bikeGunNum" />
+        <result column="cp_flag" property="cpFlag" />
+        <result column="gun_flag" property="gunFlag" />
+        <result column="factory_id" property="factoryId" />
+        <result column="rate_id" property="rateId" />
+        <result column="rateperiod_id" property="rateperiodId" />
+        <result column="limit_p" property="limitP" />
+        <result column="rv" property="rv" />
+        <result column="ri" property="ri" />
+        <result column="wiring_mode" property="wiringMode" />
+        <result column="v_up" property="vUp" />
+        <result column="v_down" property="vDown" />
+        <result column="run_date" property="runDate" />
+        <result column="create_date" property="createDate" />
+        <result column="update_date" property="updateDate" />
+        <result column="pile_idx" property="pileIdx" />
+        <result column="pile_no" property="pileNo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, subst_id, name, use_flag, serial_code, rtu_id, pileaddr, image_url, type, gun_num, bike_gun_num, cp_flag, gun_flag, factory_id, rate_id, rateperiod_id, limit_p, rv, ri, wiring_mode, v_up, v_down, run_date, create_date, update_date, pile_idx, pile_no
+    </sql>
+
+</mapper>
