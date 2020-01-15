@@ -11,7 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.ke.bean.system.Pilepara;
-import com.ke.dao.system.PileparaMapper;
+import com.ke.mapper.system.PileparaMapper;
 import com.ke.service.system.PileparaService;
 
 @SpringBootTest

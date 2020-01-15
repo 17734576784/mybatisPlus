@@ -1,7 +1,7 @@
 package com.ke.service.system.impl;
 
 import com.ke.bean.system.Pilepara;
-import com.ke.dao.system.PileparaMapper;
+import com.ke.mapper.system.PileparaMapper;
 import com.ke.service.system.PileparaService;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

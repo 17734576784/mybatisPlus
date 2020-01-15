@@ -1,7 +1,7 @@
 package com.ke.service.system.impl;
 
 import com.ke.bean.system.Rtupara;
-import com.ke.dao.system.RtuparaMapper;
+import com.ke.mapper.system.RtuparaMapper;
 import com.ke.service.system.RtuparaService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;

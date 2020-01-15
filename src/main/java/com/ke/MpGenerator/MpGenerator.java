@@ -73,7 +73,8 @@ public class MpGenerator {
 		pc.setService("service." + rb.getString("className"));
 		pc.setServiceImpl("service." + rb.getString("className") + ".impl");
 		pc.setEntity("bean." + rb.getString("className"));
-		pc.setMapper("dao." + rb.getString("className"));
+		pc.setMapper("mapper." + rb.getString("className"));
+		pc.setXml("mapper." + rb.getString("className"));
 		mpg.setPackageInfo(pc);
 
 		// 自定义配置
@@ -94,7 +95,9 @@ public class MpGenerator {
 		});
 		cfg.setFileOutConfigList(focList);
 		mpg.setCfg(cfg);
-		mpg.setTemplate(new TemplateConfig().setXml(null));
+		 //配置自定义输出模板
+        // 不需要其他的类型时，直接设置为null就不会成对应的模版了
+//		mpg.setTemplate(new TemplateConfig().setXml(null));
 
 		// 策略配置
 		StrategyConfig strategy = new StrategyConfig();

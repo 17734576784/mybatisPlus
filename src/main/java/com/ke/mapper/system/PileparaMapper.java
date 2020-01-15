@@ -1,4 +1,4 @@
-package com.ke.dao.system;
+package com.ke.mapper.system;
 
 import com.ke.bean.system.Pilepara;
 

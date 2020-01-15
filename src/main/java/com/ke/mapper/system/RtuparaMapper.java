@@ -1,4 +1,4 @@
-package com.ke.dao.system;
+package com.ke.mapper.system;
 
 import com.ke.bean.system.Rtupara;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author dbr
- * @since 2020-01-14
+ * @since 2020-01-15
  */
 public interface RtuparaMapper extends BaseMapper<Rtupara> {
 
