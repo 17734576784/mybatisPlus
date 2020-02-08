@@ -2,7 +2,8 @@ package com.ke.controller.system;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
-
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 
 /**
@@ -13,8 +14,13 @@ import org.springframework.stereotype.Controller;
  * @author dbr
  * @since 2020-01-14
  */
-@Controller
-@RequestMapping("/pilepara")
+@RestController
 public class PileparaController {
-
+	@Value("${name}")
+	public String name;
+	
+	@RequestMapping("/name")
+	public String getName() {
+		return name +" ? ";
+	}
 }
