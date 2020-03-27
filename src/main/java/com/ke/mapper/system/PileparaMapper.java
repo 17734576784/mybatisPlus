@@ -17,5 +17,5 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
  */
 public interface PileparaMapper extends BaseMapper<Pilepara> {
 	
-	List<Map<String, Object>> listPile(Page<Map<String, Object>> pagination, Map<String,Object> param);
+	List<Map<String, Object>> listPile(Page<Map<String, Object>> pagination, Map<String, Object> param);
 }

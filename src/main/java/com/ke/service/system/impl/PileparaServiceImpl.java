@@ -24,8 +24,7 @@ public class PileparaServiceImpl extends ServiceImpl<PileparaMapper, Pilepara> i
 	@Autowired
     private PileparaMapper pileparaMapper;
 	
-	public List<Map<String,Object>> listPile(Map<String,Object> param) {
-			Page<Map<String,Object>> page = new Page<>(1, 1);
+	public List<Map<String,Object>> listPile(Page<Map<String,Object>> page,Map<String,Object> param) {
 	        return this.pileparaMapper.listPile(page,param);
 	    }
 }

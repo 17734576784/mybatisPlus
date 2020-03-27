@@ -44,7 +44,7 @@ class MybatisPlusApplicationTests {
 		try {
 //			// 当前页，总条数 构造 page 对象
 			Page<Map<String, Object>> page = new Page<>(1, 10);
-			List<Map<String, Object>> pileList = pileparaService.listPile(param);
+			List<Map<String, Object>> pileList = pileparaService.listPile(page,param);
 			System.out.println(pileList.size());
 			pileList.forEach(System.out::println);
 		} catch (Exception e) {
@@ -56,10 +56,10 @@ class MybatisPlusApplicationTests {
 	public void pageandSearch() {
 		Map<String, Object> param = new HashMap<String, Object>();
 		param.put("substId", 244);
-		Page<Map<String, Object>> page = new Page<>(1, 10);
+		Page<Map<String, Object>> page = new Page<>(2, 2);
 		try {
-			List<Map<String, Object>> pileList = pileparaService.listPile(param);
-			System.out.println(pileList.size());
+			List<Map<String, Object>> pileList = pileparaService.listPile(page,param);
+			System.out.println(page.getPages() +" 页  ,"+page.getTotal() +"条记录，第"+page.getCurrent() +"页");
 			pileList.forEach(System.out::println);
 		} catch (Exception e) {
 			e.printStackTrace();

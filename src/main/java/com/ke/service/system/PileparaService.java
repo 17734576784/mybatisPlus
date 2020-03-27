@@ -17,5 +17,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2020-01-14
  */
 public interface PileparaService extends IService<Pilepara> {
-	List<Map<String, Object>> listPile(Map<String, Object> param);
+	List<Map<String, Object>> listPile(Page<Map<String,Object>> page,Map<String, Object> param);
 }
