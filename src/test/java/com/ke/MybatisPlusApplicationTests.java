@@ -32,13 +32,13 @@ class MybatisPlusApplicationTests {
 //		Page<Pilepara> page = new Page<>(1, 10);
 //		IPage<Pilepara> userIPage = pileparaMapper.selectPage(page, queryWrapper);
 //		List<User> userList = userMapper.selectPage(page, queryWrapper);//.selectList(queryWrapper);//.selectList(null);
-//        Assert.assertEquals(5, userList.size());
-//        userList.forEach(System.out::println);
+//      Assert.assertEquals(5, userList.size());
+//      userList.forEach(System.out::println);
 //		System.out.println("return selectPageLoads value = " + userIPage.getSize());
 //		List<Pilepara> userList = userIPage.getRecords();
 //		System.out.println(userList.size());
 //		userList.forEach(System.out::println);
-//		queryWrapper.eq("substId", 244
+//		queryWrapper.eq("substId", 244);
 		Map<String,Object> param = new HashMap<String, Object>();
 		param.put("substId", 244);
 		try {
